@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  background-color: #1976d2;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+}
+.listNavbar_container {
+  padding-top: 5px;
+  margin-bottom: 20px;
+  background-color: #ededed99;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+}

@@ -1,0 +1,19 @@
+.img {
+  width: 100%;
+  max-width: 100%;
+}
+.favorite_main_container {
+  background-color: #f3f3f380;
+  padding-bottom: 50px;
+}
+.item_wrapper {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.image_wrapper {
+  padding: 0 !important;
+}
+.title_wrapper {
+  padding: 10px;
+}
