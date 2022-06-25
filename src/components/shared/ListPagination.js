@@ -32,15 +32,7 @@ const ListPagination = ({
     <Container maxWidth="lg">
       <Stack spacing={2} sx={{ m: 3 }}>
         <Grid container spacing={2} sx={{ mb: 2, mt: 2 }}>
-          <Grid item xs={10} className={styles.title_wrapper}>
-            <Pagination
-              count={total_pages}
-              page={page}
-              onChange={handleChange}
-              color="primary"
-            />
-          </Grid>
-          <Grid item xs={2} className={styles.title_wrapper}>
+          <Grid item xs={12} md={2}>
             <FormControl fullWidth size="small">
               <InputLabel id="row-per-page">Rows per page</InputLabel>
               <Select
@@ -56,6 +48,14 @@ const ListPagination = ({
                 <MenuItem value={96}>96</MenuItem>
               </Select>
             </FormControl>
+          </Grid>
+          <Grid item xs={12} md={10} className={styles.pagination_wrapper}>
+            <Pagination
+              count={total_pages}
+              page={page}
+              onChange={handleChange}
+              color="primary"
+            />
           </Grid>
         </Grid>
       </Stack>
