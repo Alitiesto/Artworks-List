@@ -1,13 +1,5 @@
 const initialState = {
-  selectedItems: [],
-  itemsCounter: 0,
-};
-const sumItems = (items) => {
-  const itemsCounter = items.reduce(
-    (total, artwork) => total + artwork.quantity,
-    0
-  );
-  return itemsCounter;
+  selectedItems: []
 };
 
 const favoriteReducer = (state = initialState, action) => {
@@ -22,8 +14,7 @@ const favoriteReducer = (state = initialState, action) => {
       }
       return {
         ...state,
-        selectedItems: [...state.selectedItems],
-        ...sumItems(state.selectedItems),
+        selectedItems: [...state.selectedItems]
       };
     case "REMOVE_ITEM":
       const newSelectedItems = state.selectedItems.filter(
