@@ -42,10 +42,10 @@ const ListPagination = ({
                 label="Row per page"
                 onChange={handleRowPerPage}
               >
-                <MenuItem value={12}>12</MenuItem>
-                <MenuItem value={24}>24</MenuItem>
-                <MenuItem value={48}>48</MenuItem>
-                <MenuItem value={96}>96</MenuItem>
+                <MenuItem value={25}>25</MenuItem>
+                <MenuItem value={50}>50</MenuItem>
+                <MenuItem value={75}>75</MenuItem>
+                <MenuItem value={100}>100</MenuItem>
               </Select>
             </FormControl>
           </Grid>

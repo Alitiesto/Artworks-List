@@ -20,7 +20,7 @@ import Container from "@mui/material/Container";
 import styles from "./List.module.css";
 
 const List = () => {
-  const [rowPerPage, setrowPerPage] = useState(12);
+  const [rowPerPage, setrowPerPage] = useState(25);
   const [page, setPage] = useState(1);
   const dispatch = useDispatch();
   const artworksState = useSelector((state) => state.artworksState);
