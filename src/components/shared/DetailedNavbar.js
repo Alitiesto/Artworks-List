@@ -13,6 +13,8 @@ import Container from "@mui/material/Container";
 import styles from "./DetailedNavbar.module.css";
 
 const DetailedNavbar = () => {
+
+
   return (
     <div className={styles.detailNavbar_container}>
       <Container maxWidth="lg">
@@ -29,6 +31,7 @@ const DetailedNavbar = () => {
                 to="/lists"
                 startIcon={<ArrowBackIcon />}
               >
+             
                 Back to lists
               </Button>
             </Grid>

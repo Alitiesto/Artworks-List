@@ -15,17 +15,18 @@ import styles from "./ListPagination.module.css";
 
 const ListPagination = ({
   page,
-  setPage,
+  setPageAction,
   total_pages,
   rowPerPage,
-  setrowPerPage,
+  setRowPerPageAction,
+  dispatch
 }) => {
   const handleChange = (event, value) => {
-    setPage(value);
+    dispatch(setPageAction(value));
   };
 
   const handleRowPerPage = (event) => {
-    setrowPerPage(event.target.value);
+    dispatch(setRowPerPageAction(event.target.value));
   };
 
   return (

@@ -20,6 +20,27 @@ const fetchArtworksFailure = (error) => {
   };
 };  
 
+export const setPageAction = (page) => {
+  return {
+    type: "SET_PAGE",
+    payload: page,
+  };
+}; 
+
+export const setRowPerPageAction = (row) => {
+  return {
+    type: "SET_ROWPERPAGE",
+    payload: row,
+  };
+}; 
+
+export const setSearchAction = (text) => {
+  return {
+    type: "SET_SEARCH",
+    payload: text,
+  };
+}; 
+
 export const fetchArtworks = (page , searchText , rowPerPage) => {
   return (dispatch) => {
     dispatch(fetchArtworksRequest());

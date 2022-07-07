@@ -3,7 +3,6 @@ const initialState = {
 };
 
 const favoriteReducer = (state = initialState, action) => {
-  // console.log(state);
   switch (action.type) {
     case "ADD_ITEM":
       if (!state.selectedItems.find((item) => item.id === action.payload.id)) {
